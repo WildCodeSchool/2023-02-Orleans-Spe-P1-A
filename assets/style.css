@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Press+Start+2P&display=swap');
+
+:root {
+    --primary-rgb: rgb(96, 102, 28);
+    --primary: #60661C;
+    --secondary-rgb: rgb(191, 128, 53);
+    --secondary:#BF8035;
+    --light-rgb: rgb(245, 245, 245);
+    --light:#F5F5F5;
+    --dark-rgb: rgb(48, 57, 4);
+    --dark:#303904;
+    --accent-rgb: rgb(235, 133, 38);
+    --accent: #EB8526;
+    --shadow-color: rgba(48, 57, 4, 0.5);
+    --text-font: 'Karla', sans-serif;
+    --title-font: 'Press Start 2P', sans-serif;
+    --font-size: 1.1rem;
+    --font-size-link:1.3rem;
+    --header-font-size: 3.4rem;
+    --title-font-size: 2.2rem;
+
+    --spacing:0.5rem;
+    --spacing2:calc(--spacing * 2);
+    --spacing3:calc(--spacing * 3);
+    --spacing4:calc(--spacing * 4);
+    --spacing5:calc(--spacing * 5);
+
+    --shadow: 2px 1px 4px var(--dark);
+
+    --line-height: 1.5;
+}
+
+h1 {
+    font-family: var(--title-font);
+    font-size: var(--header-font-size);
+    color: var(--light);
+}
