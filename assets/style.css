@@ -84,7 +84,7 @@ span.branding {
 /* hero */
 
 div.hero {
-    background-image: url(image/hero.jpg);
+    background-image: url(images/hero.jpg);
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -105,3 +105,29 @@ div.hero h2 {
     text-shadow: 2px 2px 4px rgba(0,0,0,.4);
 }
 /**/
+/* cookies */
+
+div.cookie_message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark);
+    color: white;
+    padding: var(--spacing3);
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+.cookie_button {
+    background-color: var(--accent);
+    padding: var(--spacing2);
+    border-radius: 5px;
+    border-style: none;
+    margin: 0 var(--spacing);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
