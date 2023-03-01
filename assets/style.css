@@ -6,6 +6,7 @@
     --secondary-rgb: rgb(191, 128, 53);
     --secondary:#BF8035;
     --light-rgb: rgb(245, 245, 245);
+    --light-rgba: rgba(245, 245, 245, .3);
     --light:#F5F5F5;
     --dark-rgb: rgb(48, 57, 4);
     --dark:#303904;
