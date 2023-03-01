@@ -122,11 +122,14 @@ div.hero h2 {
     width: 50%;
     min-width: 600px;
     line-height: 150%;
-    font-size: 50px;
+    font-size: 2.5rem;
     color: white;
     font-family: var(--title-font);
     padding: var(--spacing3);
     text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+}
+div.hero h2 span {
+    display: inline-block;
 }
 /**/
 /* cookies */
