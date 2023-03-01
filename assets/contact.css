@@ -53,6 +53,10 @@ input, textarea {
 }
 textarea {
     height: 200px;
+    font-family: var(--text-font);
+}
+textarea::placeholder {
+    font-family: var(--text-font);
 }
 button {
     background-color: var(--primary);
