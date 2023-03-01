@@ -17,7 +17,7 @@ function rejectCookies() {
 }
 
 
-async function sleep(duration) {
+function sleep(duration) {
     return new Promise(resolve => setInterval(resolve, duration))
 }
 
