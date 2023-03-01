@@ -20,6 +20,7 @@
     --title-font-size: 2.2rem;
 
     --spacing:0.5rem;
+    
     --spacing2:calc(var(--spacing) * 2);
     --spacing3:calc(var(--spacing) * 3);
     --spacing4:calc(var(--spacing) * 4);
@@ -29,6 +30,7 @@
 
     --line-height: 1.5;
 }
+
 html {
     font-family: var(--text-font);
 }
