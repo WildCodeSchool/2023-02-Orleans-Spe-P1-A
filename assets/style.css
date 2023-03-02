@@ -11,24 +11,37 @@
     --dark:#303904;
     --accent-rgb: rgb(235, 133, 38);
     --accent: #EB8526;
-    --shadow-color: rgba(48, 57, 4, 0.5);
+    --shadow-color: rgba(48, 57, 4, 0.3);
     --text-font: 'Karla', sans-serif;
     --title-font: 'Press Start 2P', sans-serif;
     --font-size: 1.1rem;
-    --font-size-link:1.3rem;
-    --header-font-size: 3.4rem;
+    --font-size-link: 1.3rem;
+    --header-font-size: clamp(1.5rem, 10vw, 3.4rem);
     --title-font-size: 2.2rem;
 
     --spacing:0.5rem;
-    
     --spacing2:calc(var(--spacing) * 2);
     --spacing3:calc(var(--spacing) * 3);
     --spacing4:calc(var(--spacing) * 4);
-    --spacing5:calc(var(--spacing) * );
+    --spacing5:calc(var(--spacing) * 5);
 
-    --shadow: 2px 1px 4px var(--dark);
+    --shadow: 2px 2px 4px var(--shadow-color);
 
     --line-height: 1.5;
+
+    --header-picture: url(images/hero.jpg);
+}
+
+* {
+    box-sizing: border-box;
+    line-height: var(--line-height);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
 }
 
 html {
@@ -40,6 +53,14 @@ h1 {
     font-size: var(--header-font-size);
     color: var(--light);
 }
+
+h2, h3, h4, h5 {
+    font-family: var(--title-font);
+    font-size: var(--title-font-size);
+    color: var(--accent);
+    text-shadow: var(--shadow);
+}
+
 /* header styles */
 header.navbar-container {
     z-index:9999;
