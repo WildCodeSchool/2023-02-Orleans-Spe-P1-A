@@ -1,0 +1,144 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 3rem 0;
+}
+.container.alt {
+    background-color: #f8ffe7;
+}
+div.section {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+}
+div.pad-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+.divide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divide-60 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divide-40 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    text-align: center;
+    width: 100%;
+}
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+div.stripe, div.stripe span{
+    transition: all 0.3s ease-in-out;
+}
+.video-container {
+    width: 100%;
+    height: 100%;
+}
+iframe {
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    pointer-events: none;
+    aspect-ratio: 16/9;
+}
+div.stripe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 3rem 0;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
+}
+div.stripe:hover {
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.4);
+}
+div.stripe:hover span {
+    transform: scale(1.05);
+}
+div.stripe span {
+    /* big exergue catch phrase */
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 2.5rem;
+    color: white;
+}
+div.stripe:hover span.highlight {
+    
+    color: rgb(255, 215, 141)
+}
+span.highlight {
+    font-weight: 900;
+    padding: 0!important;
+}
+/* image and image effet an image container */
+div.image-container {
+    width: 100%;
+    position: relative;
+}
+.image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.fantom {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    filter: blur(100px);
+}
+img:hover {
+    transform: scale(1.05);
+}
+/* media queries */
+@media screen and (max-width: 900px) {
+    div.section {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .divide, .divide-60, .divide-40 {
+        width: 100%;
+    }
+}
