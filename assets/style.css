@@ -102,6 +102,10 @@ span.branding {
 /* */
 /* hero */
 
+.header {
+    margin-bottom: 5rem;
+}
+
 div.hero {
     background-image: url(images/hero.jpg);
     background-size: cover;
@@ -126,8 +130,8 @@ div.hero h2 {
 
 .paint-effect {
     position: absolute;
-    bottom: -120px;
-    height: 20%;
+    bottom: -2rem;
+    height: 10%;
     width: 100%;
     background-image: url(images/header-paint.png);
 }
