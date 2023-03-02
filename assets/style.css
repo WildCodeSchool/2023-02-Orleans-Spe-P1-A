@@ -20,10 +20,10 @@
     --title-font-size: 2.2rem;
 
     --spacing:0.5rem;
-    --spacing2:calc(--spacing * 2);
-    --spacing3:calc(--spacing * 3);
-    --spacing4:calc(--spacing * 4);
-    --spacing5:calc(--spacing * 5);
+    --spacing2:calc(var(--spacing) * 2);
+    --spacing3:calc(var(--spacing) * 3);
+    --spacing4:calc(var(--spacing) * 4);
+    --spacing5:calc(var(--spacing) * 5);
 
     --shadow: 2px 2px 4px var(--shadow-color);
 
