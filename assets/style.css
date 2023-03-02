@@ -132,7 +132,41 @@ div.hero h2 {
 div.hero h2 span {
     display: inline-block;
 }
+div.hero .scroll_down {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left:0;
+    bottom:10px;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 60%;
+    animation: scroll_down 2s infinite;
+}
+/* animate scroll down with loop effect bouncing up and down slowly*/
+
+@keyframes scroll_down {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 /**/
+/* media queries hero */
+
+@media screen and (max-width: 768px) {
+    div.hero h2 {
+        width: 100%;
+        min-width: 0;
+        font-size: 1.5rem;
+        padding: var(--spacing);
+    }
+}
 /* cookies */
 
 div.cookie_message {
