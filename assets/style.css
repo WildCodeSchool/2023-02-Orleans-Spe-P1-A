@@ -47,6 +47,8 @@ body {
 html {
     font-family: var(--text-font);
 }
+/*
+Déplacé vers animals.css
 
 h1 {
     font-family: var(--title-font);
@@ -60,6 +62,7 @@ h2, h3, h4, h5 {
     color: var(--accent);
     text-shadow: var(--shadow);
 }
+*/
 
 /* header styles */
 header.navbar-container {
@@ -129,10 +132,11 @@ span.branding {
 /* hero */
 
 div.hero {
-    background-image: url(images/hero.jpg);
+    background-image: var(--header-picture);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 50vh;
+    min-height: 400px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -152,20 +156,6 @@ div.hero h2 {
 }
 div.hero h2 span {
     display: inline-block;
-}
-div.hero .scroll_down {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    left:0;
-    bottom:10px;
-    align-items: center;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    opacity: 60%;
-    animation: scroll_down 2s infinite;
 }
 /* animate scroll down with loop effect bouncing up and down slowly*/
 
