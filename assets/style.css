@@ -33,6 +33,7 @@
 
 html {
     font-family: var(--text-font);
+    background-color: var(--light);
 }
 
 h1 {
@@ -40,6 +41,7 @@ h1 {
     font-size: var(--header-font-size);
     color: var(--light);
 }
+
 /* header styles */
 header.navbar-container {
     z-index:9999;
@@ -47,9 +49,11 @@ header.navbar-container {
     top:0;
     width: 100%;
 }
+
 div.opacity-layer {
     background-color: rgba(96, 102, 28,.6);
 }
+
 div.navbar {
     display: flex;
     justify-content: space-between;
@@ -59,6 +63,7 @@ div.navbar {
     color: white;
     box-sizing: border-box;
 }
+
 span.branding {
     display: flex;
     justify-content: center;
