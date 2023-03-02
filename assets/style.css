@@ -37,55 +37,33 @@ h1 {
     color: var(--light);
 }
 
-
-
-
-
 /*--- FOOTER --*/
-
 
 footer {
     background-color: rgb(72, 140, 78);   
 }
 
-
-
-
 .footer1 {
     display: flex;
     justify-content: space-around;
     height: 200px;
-    border-bottom: 0.3px solid var(--light-rgba);
-    
+    border-bottom: 0.3px solid var(--light-rgba);  
 }
-
-
-
 
 .footer_first_column {
-    padding-top: 30px;
-    
+    padding-top: 30px;   
 }
-
-
-
 
 .branding_footer {
     font-family: var(--title-font);
      color: var(--light);
 }
 
-
-
-
 .footer_column ul li:first-child {
     font-size:0.8em ;
     color: var(--light);
     font-family: var(--title-font);
 }
-
-
-
 
 .footer_column ul:not(.third_column ul)  {
     height: 150px;
@@ -95,30 +73,18 @@ footer {
     list-style: none;
 }
 
-
-
-
 .footer_column ul li a {
     text-decoration: none;
-    color: var(--light);
-    
+    color: var(--light); 
 }
-
-
 
 .footer_column ul li:not(:first-child) {
     transition: all 0.3s  ease-in-out;
 }
 
-
-
-
 .footer_column ul li:not(:first-child):hover {
-    transform:scale(1.10);
-    
+    transform:scale(1.10);  
 }
-
-
 
 .footer_follow {
     font-family: var(--title-font);
@@ -127,17 +93,11 @@ footer {
     padding-top: 19px;
 }
 
-
-
 .footer_third_column {
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
-   
-       
+    padding-top: 15px;     
 }
-
-
 
 .footer_social {
     display: flex;
@@ -146,28 +106,20 @@ footer {
     font-size: 2em;
     cursor: pointer;
     color: var(--light); 
-    text-align: center;
-    
+    text-align: center;   
 }
-
 
 .fa-brands {
     transition: all 0.3s  ease-in-out;
 }
 
-
 .fa-brands:hover {
-
     transform:scale(1.15);
-    
-
 }
 
 .footer_copyright {
     color: var(--light);
 }
-
-
 
 /*--- FOOTER2 ---*/
 
@@ -192,20 +144,14 @@ footer {
     list-style: none;
 }
 
-
-.footer_mentions li a {
-    
+.footer_mentions li a {  
     text-decoration: none;
     color: var(--light);
-
 }
-
 
 /*--- MEDIA QUERY ---*/
 
-
 @media all and (max-width:840px) {
-
 
     .footer1 { 
         flex-wrap: wrap;
@@ -228,19 +174,13 @@ footer {
 
 }
 
-
-
-
-
 @media all and (max-width:576px) {
-
     .footer1, .footer2  {
         font-size: 1.5em;
     }
 
     footer {
-        height:900px;
-          
+        height:900px;     
     }
 
     .footer1 { 
@@ -260,16 +200,13 @@ footer {
         height: 150px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        
+        justify-content: space-around;   
     }
 
-   
     .footer_real_third_column ul {
         align-items: start;
         text-align: center;
-        padding-right: 45px;
-        
+        padding-right: 45px;   
     }
 
     .footer_mentions {
