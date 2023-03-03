@@ -39,10 +39,10 @@
     height: 350px;
 }
 
-.text-title {
+.text-title > h3{
     text-align: center;
     font-family: var(--title-font);
-    font-size: var(--font);
+    font-size: var(--title-font-size);
     margin-top: 1em;
     color: var(--light);
 }
@@ -118,11 +118,11 @@
     border-radius: 2%;
 }
 
-.ticket-title {
+.ticket-title >h3 {
     text-align: center;
-    font-family: var(--text-font);
-    text-shadow: 1px 3px 2px rgba(59, 57, 57, 0.925);
     font-family: var(--title-font);
+    font-size: calc(var(--title-font-size) - 1rem);
+    text-shadow: 1px 3px 2px rgba(59, 57, 57, 0.925);
     color: var(--light);
 }
 
