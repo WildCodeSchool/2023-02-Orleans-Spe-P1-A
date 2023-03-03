@@ -2,15 +2,15 @@
 
 :root {
     --primary-rgb: rgb(96, 102, 28);
-    --primary: #60661C;
+    --primary: #60661c;
     --secondary-rgb: rgb(191, 128, 53);
-    --secondary:#BF8035;
+    --secondary: #bf8035;
     --light-rgb: rgb(245, 245, 245);
-    --light:#F5F5F5;
+    --light: #f5f5f5;
     --dark-rgb: rgb(48, 57, 4);
-    --dark:#303904;
+    --dark: #303904;
     --accent-rgb: rgb(235, 133, 38);
-    --accent: #EB8526;
+    --accent: #eb8526;
     --shadow-color: rgba(48, 57, 4, 0.3);
     --text-font: 'Karla', sans-serif;
     --title-font: 'Press Start 2P', sans-serif;
@@ -19,11 +19,11 @@
     --header-font-size: clamp(1.5rem, 10vw, 3.4rem);
     --title-font-size: 2.2rem;
 
-    --spacing:0.5rem;
-    --spacing2:calc(var(--spacing) * 2);
-    --spacing3:calc(var(--spacing) * 3);
-    --spacing4:calc(var(--spacing) * 4);
-    --spacing5:calc(var(--spacing) * 5);
+    --spacing: 0.5rem;
+    --spacing2: calc(var(--spacing) * 2);
+    --spacing3: calc(var(--spacing) * 3);
+    --spacing4: calc(var(--spacing) * 4);
+    --spacing5: calc(var(--spacing) * 5);
 
     --shadow: 2px 2px 4px var(--shadow-color);
 
@@ -66,13 +66,13 @@ h2, h3, h4, h5 {
 
 /* header styles */
 header.navbar-container {
-    z-index:9999;
-    position:fixed;
-    top:0;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
     width: 100%;
 }
 div.opacity-layer {
-    background-color: rgba(96, 102, 28,.6);
+    background-color: rgba(96, 102, 28, 0.6);
 }
 div.navbar {
     display: flex;
@@ -111,7 +111,7 @@ span.branding {
     height: 100%;
     display: flex;
     align-items: center;
-    }
+}
 .navbar nav a:hover {
     color: var(--primary);
     background-color: white;
@@ -142,8 +142,7 @@ div.hero {
     background-image: var(--header-picture);
     background-size: cover;
     background-position: center;
-    height: 50vh;
-    min-height: 400px;
+    height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -159,7 +158,7 @@ div.hero h2 {
     color: white;
     font-family: var(--title-font);
     padding: var(--spacing3);
-    text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 div.hero h2 span {
     display: inline-block;
