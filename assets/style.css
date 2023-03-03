@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Press+Start+2P&display=swap');
 
 :root {
-    --primary-rgb: rgb(96, 102, 28);
-    --primary: #60661C;
+    --primary-rgb: rgb(57, 124, 40);
+    --primary: #397C28;
     --secondary-rgb: rgb(191, 128, 53);
     --secondary:#BF8035;
     --light-rgb: rgb(245, 245, 245);
@@ -59,6 +59,10 @@ h2, h3, h4, h5 {
     font-size: var(--title-font-size);
     color: var(--accent);
     text-shadow: var(--shadow);
+    font-weight: 600;
+    margin-top: var(--spacing4);
+    -webkit-text-stroke: 0.2px white;
+    margin-bottom: 1.5rem;
 }
 
 /* header styles */
@@ -69,15 +73,15 @@ header.navbar-container {
     width: 100%;
 }
 div.opacity-layer {
-    background-color: rgba(96, 102, 28,.6);
+    background-color: rgba(57, 124, 40,.5);
 }
 div.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing3);
-    backdrop-filter: blur(20px);
-    color: white;
+    padding: var(--spacing);
+    backdrop-filter: blur(15px);
+    color: var(--light);
     box-sizing: border-box;
 }
 
