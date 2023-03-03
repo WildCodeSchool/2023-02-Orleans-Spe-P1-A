@@ -9,13 +9,31 @@ function displayCookiesMessage() {
 function acceptCookies() {
     console.log("Cookies accepted");
     hideCookiesMessage();
+    saveInLocalstorage();
 }
 
 function rejectCookies() {
     console.log("Cookies rejected");
     hideCookiesMessage();
+    saveInLocalstorage();
 }
 
+function saveInLocalstorage()
+{
+    const l = window.localStorage;
+    l.setItem("cookies", true);
+}
+
+function isAlreadyAsked()
+{
+    const l = window.localStorage;
+    const cookies = l.getItem("cookies");
+    if (cookies) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 function sleep(duration) {
     return new Promise(resolve => setInterval(resolve, duration))
@@ -33,5 +51,8 @@ async function cookiesProcess()
     acceptButton.addEventListener("click", acceptCookies)
     
 }
+console.log(isAlreadyAsked())
 
-await cookiesProcess();
+if (!isAlreadyAsked()) {
+    await cookiesProcess();
+}
