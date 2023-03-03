@@ -1,0 +1,238 @@
+.main_accueil {
+    min-height: 1200px;
+    width: 80%;
+    margin: auto;
+}
+
+.main_h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--title-font-size);
+    color: var(--accent-rgb);
+    height: 100px;
+    font-family: var(--title-font);
+    text-shadow: grey 2px 3px 5px;
+}
+
+.main_presentation {
+    height: 625px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+}
+
+.main_portrait {
+    background-image: url("/assets/images/giraffe3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.top_ruban {
+    width: 100px;
+    height: 20px;
+    background-color: rgba(255, 255, 235, .6);
+    transform: skew(20deg);
+    rotate: -40deg;
+    translate: -15px 10px;
+    box-shadow: 0px -5px 5px black;
+}
+
+.bottom_ruban {
+    width: 80px;
+    height: 20px;
+    background-color: #fff;
+    opacity: 0.7;
+    align-self: self-end;
+    transform: skew(20deg);
+    rotate: -40deg;
+    translate: 25px -10px;
+    box-shadow: 0px 5px 5px black;
+}
+
+.main_text {
+    width: 600px;
+    height: 450px;
+    font-size: 1.2em;
+    background-color: var(--secondary-rgb);
+    border-radius: 15px;
+}
+
+.main_text p {
+    color: var(--light);
+    margin: 30px;
+}
+
+.main_grass_top,
+.main_grass_bottom {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_grass_top {
+    margin-top: -20px;
+    transform: translateX(-25px);
+}
+
+.main_grass1 {
+    rotate: 130deg;
+}
+
+.main_grass2 {
+    rotate: -130deg;
+}
+
+.main_grass3 {
+    rotate: 45deg;
+}
+
+.main_grass4 {
+    rotate: -45deg;
+}
+
+.main_grass_bottom {
+    transform: translateX(-25px);
+    margin-top: -20px;
+}
+
+.material-symbols-outlined {
+    font-size: 4em;
+    color: #fff;
+}
+
+.main_icon_animal {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.little_girafe {
+    display: flex;
+    padding-left: 70px;
+    height: 80px;
+}
+
+.little_elephant {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    padding-right: 70px;
+}
+
+.main_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+}
+
+.main_zoo_menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.main_button {
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    box-shadow: var(--shadow);
+}
+
+.main_button:hover {
+    transform: scale(1.1);
+}
+
+.main_button1,
+.main_button3 {
+    background-color: rgb(72, 140, 78);
+}
+
+.main_button2,
+.main_button4 {
+    background-color: var(--secondary-rgb);
+}
+
+.main_button:hover {
+    cursor: pointer;
+}
+
+.main_button a {
+    display: flex;
+    width: 232px;
+    height: 80px;
+    font-family: var(--title-font);
+    color: var(--light);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/*** MEDIA QUERY ***/
+
+@media all and (max-width: 1188px) {
+    .main_menu {
+        justify-content: flex-start;
+        height: 400px;
+    }
+
+    .main_zoo_menu {
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width:1100px) {
+    .main_presentation {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 1100px;
+        gap: 50px;
+    }
+}
+
+@media all and (max-width:680px) {
+    .main_presentation {
+        min-height: 1000px;
+    }
+
+    .main_portrait {
+        width: 80%;
+    }
+
+    .main_text {
+        width: 80%;
+        height: auto;
+    }
+
+    .main_menu {
+        height: 600px;
+    }
+
+    .main_grass2,
+    .main_grass4 {
+        display: none;
+    }
+
+    .main_grass_bottom {
+        transform: translateX(-25px);
+        margin-bottom: -25px;
+
+    }
+}
