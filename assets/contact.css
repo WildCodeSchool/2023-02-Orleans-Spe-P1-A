@@ -12,6 +12,8 @@
     align-items: center;
 }
 
+.container.alt {
+    background-color: #f8ffe7;
 .container > div {
     width: 60%;
 }
