@@ -79,7 +79,8 @@ p.lead-text {
 }
 /**/
 /* element bande vert */
-div.stripe, div.stripe span{
+div.stripe,
+div.stripe span {
     transition: all 0.3s ease-in-out;
 }
 div.stripe {
@@ -109,7 +110,7 @@ div.stripe:hover span.highlight:nth-last-child(1) {
 }
 span.highlight {
     font-weight: 900;
-    padding: 0!important;
+    padding: 0 !important;
 }
 /**/
 /* video */
@@ -162,11 +163,13 @@ section h4 {
     font-weight: 600;
     margin-bottom: 2rem;
 }
-section p, section h4 {
+section p,
+section h4 {
     text-align: left;
     width: 100%;
 }
-section.text-right p, section.text-right h4 {
+section.text-right p,
+section.text-right h4 {
     text-align: right;
     width: 100%;
 }
@@ -177,7 +180,9 @@ section.text-right p, section.text-right h4 {
         flex-direction: column-reverse;
         gap: 1rem;
     }
-    .divide, .divide-60, .divide-40 {
+    .divide,
+    .divide-60,
+    .divide-40 {
         width: 100%;
     }
 }
