@@ -1,3 +1,7 @@
+:root {
+    --header-picture: url(images/zebra-header.jpg);
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -6,15 +10,7 @@
     padding: var(--spacing2) 0;
     box-sizing: border-box;
 }
-.page-title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-top: var(--spacing4);
-    color: var(--accent);
-    font-family: var(--title-font);
-    -webkit-text-stroke: 1px white;
-    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5)
-}
+
 .container.alt {
     background-color: #dfdfdf;
 }
@@ -61,13 +57,18 @@ textarea::placeholder {
 button {
     background-color: var(--primary);
     padding: var(--spacing2);
-    font-size: large;
+    font-size: calc(var(--font-size) + 0.1rem);
     width: 100%;
     box-sizing: border-box;
     border-style: none;
     border-radius:7px;
-    color:white;
+    color: var(--light);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline-color: var(--light);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: -7px;
 }
 button:hover {
     background-color: var(--accent);
