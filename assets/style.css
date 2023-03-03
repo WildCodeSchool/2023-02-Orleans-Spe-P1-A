@@ -21,14 +21,19 @@
     --title-font-size: 2.2rem;
 
     --spacing:0.5rem;
-    --spacing2:calc(--spacing * 2);
-    --spacing3:calc(--spacing * 3);
-    --spacing4:calc(--spacing * 4);
-    --spacing5:calc(--spacing * 5);
+    
+    --spacing2:calc(var(--spacing) * 2);
+    --spacing3:calc(var(--spacing) * 3);
+    --spacing4:calc(var(--spacing) * 4);
+    --spacing5:calc(var(--spacing) * );
 
     --shadow: 2px 1px 4px var(--dark);
 
     --line-height: 1.5;
+}
+
+html {
+    font-family: var(--text-font);
 }
 
 h1 {
@@ -36,6 +41,7 @@ h1 {
     font-size: var(--header-font-size);
     color: var(--light);
 }
+
 
 /*--- FOOTER --*/
 
@@ -218,4 +224,98 @@ footer {
         margin-left: 0px;
         color: var(--light);
     }
+
+/* header styles */
+header.navbar-container {
+    z-index:9999;
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+div.opacity-layer {
+    background-color: rgba(96, 102, 28,.6);
+}
+div.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing3);
+    backdrop-filter: blur(20px);
+    color: white;
+    box-sizing: border-box;
+}
+span.branding {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing);
+    font-family: var(--title-font);
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar nav a {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 0 var(--spacing2);
+    transition: all 0.3s ease-in-out;
+}
+/* */
+/* hero */
+
+div.hero {
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+div.hero h2 {
+    width: 50%;
+    min-width: 600px;
+    line-height: 150%;
+    font-size: 50px;
+    color: white;
+    font-family: var(--title-font);
+    padding: var(--spacing3);
+    text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+}
+/**/
+/* cookies */
+
+div.cookie_message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark);
+    color: white;
+    padding: var(--spacing3);
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+.cookie_button {
+    background-color: var(--accent);
+    padding: var(--spacing2);
+    border-radius: 5px;
+    border-style: none;
+    margin: 0 var(--spacing);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
 }
