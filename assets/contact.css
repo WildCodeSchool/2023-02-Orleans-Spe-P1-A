@@ -7,18 +7,25 @@
     margin-bottom: 3rem;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--spacing2) 0;
-    box-sizing: border-box;
 }
 
-.container.alt {
-    background-color: #dfdfdf;
+.container > div {
+    width: 60%;
 }
-section {
-    max-width: 768px;
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: var(--spacing4);
+    color: var(--accent);
+    font-family: var(--title-font);
+    -webkit-text-stroke: 1px white;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5)
 }
+
 .container.alt section h4 {
     text-align: end;
 }
@@ -35,9 +42,6 @@ p {
 }
 form {
     display: block;
-}
-label {
-    text-align: right;
 }
 
 input, textarea {
@@ -74,4 +78,10 @@ button {
 }
 button:hover {
     background-color: var(--accent);
+}
+
+@media screen and (max-width: 768px) {
+    .container > div {
+        width: 80%;
+    }
 }
