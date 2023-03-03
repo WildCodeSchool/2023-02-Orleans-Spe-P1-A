@@ -61,7 +61,7 @@
 .main_text {
     width: 600px;
     height: 450px;
-    font-size: 1.2em;
+    font-size: 1em;
     background-color: var(--secondary-rgb);
     border-radius: 15px;
 }
@@ -69,6 +69,7 @@
 .main_text p {
     color: var(--light);
     margin: 30px;
+    
 }
 
 .main_grass_top,
@@ -107,26 +108,29 @@
 
 .material-symbols-outlined {
     font-size: 4em;
-    color: #fff;
+    color: var(--light);
 }
 
 .main_icon_animal {
     display: flex;
     justify-content: space-between;
+    width: 95%;
     height: 80px;
+    
 }
 
-.little_girafe {
+.little_girafe2 {
     display: flex;
-    padding-left: 70px;
+    padding-left: 60px;
     height: 80px;
+    background-color: var(--light);
 }
 
 .little_elephant {
     display: flex;
     width: 80px;
     height: 80px;
-    padding-right: 70px;
+    padding-right: 80px;
 }
 
 .main_menu {
