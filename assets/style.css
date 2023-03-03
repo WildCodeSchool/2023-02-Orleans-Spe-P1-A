@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Press+Start+2P&display=swap');
 
 :root {
-    --primary-rgb: rgb(96, 102, 28);
-    --primary: #60661c;
+    --primary-rgb: rgb(57, 124, 40);
+    --primary: #397C28;
     --secondary-rgb: rgb(191, 128, 53);
     --secondary: #bf8035;
     --light-rgb: rgb(245, 245, 245);
@@ -44,8 +44,21 @@ body {
     min-height: 100vh;
 }
 
+* {
+    box-sizing: border-box;
+    line-height: var(--line-height);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
 html {
     font-family: var(--text-font);
+    background-color: var(--light);
 }
 /*
 Déplacé vers animals.css
@@ -61,6 +74,10 @@ h2, h3, h4, h5 {
     font-size: var(--title-font-size);
     color: var(--accent);
     text-shadow: var(--shadow);
+    font-weight: 600;
+    margin-top: var(--spacing4);
+    -webkit-text-stroke: 0.2px white;
+    margin-bottom: 1.5rem;
 }
 */
 
@@ -71,16 +88,18 @@ header.navbar-container {
     top: 0;
     width: 100%;
 }
+
 div.opacity-layer {
-    background-color: rgba(96, 102, 28, 0.6);
+    background-color: rgba(57, 124, 40,.5);
 }
+
 div.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--spacing3);
-    backdrop-filter: blur(20px);
-    color: white;
+    padding: var(--spacing);
+    backdrop-filter: blur(15px);
+    color: var(--light);
     box-sizing: border-box;
     height: 60px;
 }
@@ -88,15 +107,18 @@ div.navbar {
     text-decoration: none;
     color: white;
 }
-span.branding {
+
+.navbar > .branding {
     display: flex;
     justify-content: center;
     font-family: var(--title-font);
     align-items: center;
     text-transform: capitalize;
-    font-size: 1.2rem;
-    cursor: pointer;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--light);
 }
+
 .navbar nav {
     display: flex;
     align-items: center;
@@ -113,8 +135,8 @@ span.branding {
     align-items: center;
 }
 .navbar nav a:hover {
-    color: var(--primary);
-    background-color: white;
+    color: var(--accent);
+    filter: brightness(120%);
 }
 /* media queries navbar*/
 
@@ -138,6 +160,10 @@ span.branding {
 /* */
 /* hero */
 
+.header {
+    margin-bottom: 5rem;
+}
+
 div.hero {
     background-image: var(--header-picture);
     background-size: cover;
@@ -160,6 +186,15 @@ div.hero h2 {
     padding: var(--spacing3);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
+
+.paint-effect {
+    position: absolute;
+    bottom: -2rem;
+    height: 10%;
+    width: 100%;
+    background-image: url(images/header-paint.png);
+}
+
 div.hero h2 span {
     display: inline-block;
 }
@@ -173,6 +208,7 @@ div.hero h2 span {
         transform: translateY(0);
     }
 }
+
 /**/
 /* media queries hero */
 
