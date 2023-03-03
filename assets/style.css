@@ -4,6 +4,9 @@
     --primary-rgb: rgb(57, 124, 40);
     --primary: #397C28;
     --secondary-rgb: rgb(191, 128, 53);
+    --secondary: #bf8035;
+    --light-rgb: rgb(245, 245, 245);
+    --light: #f5f5f5;
     --secondary: #BF8035;
     --light-rgb: rgb(245, 245, 245);
     --light-rgba: rgba(245, 245, 245, .3);
@@ -11,7 +14,7 @@
     --dark-rgb: rgb(48, 57, 4);
     --dark: #303904;
     --accent-rgb: rgb(235, 133, 38);
-    --accent: #EB8526;
+    --accent: #eb8526;
     --shadow-color: rgba(48, 57, 4, 0.3);
     --text-font: 'Karla', sans-serif;
     --title-font: 'Press Start 2P', sans-serif;
@@ -61,6 +64,8 @@ html {
     font-family: var(--text-font);
     background-color: var(--light);
 }
+/*
+Déplacé vers animals.css
 
 h1 {
     font-family: var(--title-font);
@@ -267,6 +272,7 @@ h5 {
     -webkit-text-stroke: 0.2px white;
     margin-bottom: 1.5rem;
 }
+*/
 
 /* header styles */
 header.navbar-container {
@@ -288,12 +294,16 @@ div.navbar {
     backdrop-filter: blur(15px);
     color: var(--light);
     box-sizing: border-box;
+    height: 60px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
 }
 
 .navbar > .branding {
     display: flex;
     justify-content: center;
-    padding: var(--spacing);
     font-family: var(--title-font);
     align-items: center;
     text-transform: capitalize;
@@ -304,18 +314,19 @@ div.navbar {
 
 .navbar nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .navbar nav a {
     text-transform: uppercase;
-    font-size: 1rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
     padding: 0 var(--spacing2);
-    transition: all 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .navbar nav a:hover {
@@ -393,21 +404,6 @@ div.hero h2 span {
     display: inline-block;
 }
 
-div.hero .scroll_down {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    left: 0;
-    bottom: 10px;
-    align-items: center;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    opacity: 60%;
-    animation: scroll_down 2s infinite;
-}
-
 /* animate scroll down with loop effect bouncing up and down slowly*/
 
 @keyframes scroll_down {
@@ -459,4 +455,3 @@ div.cookie_message {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-

@@ -6,6 +6,20 @@
     --big-animals-card-width : clamp(34.3rem, 90vw, 56.3rem);
 }
 
+/* déplacé depuis style.css, gene les autres pages */
+h1 {
+    font-family: var(--title-font);
+    font-size: var(--header-font-size);
+    color: var(--light);
+}
+
+h2, h3, h4, h5 {
+    font-family: var(--title-font);
+    font-size: var(--title-font-size);
+    color: var(--accent);
+    text-shadow: var(--shadow);
+}
+
 .animals {
     display: flex;
     flex-direction: column;
