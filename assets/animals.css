@@ -1,0 +1,291 @@
+@import "style.css";
+
+:root {
+    --header-picture: url(images/tiger-header.jpg);
+    --animals-card-width : clamp(17rem, 45vw, 28rem);
+    --big-animals-card-width : clamp(34.3rem, 90vw, 56.3rem);
+}
+
+/* déplacé depuis style.css, gene les autres pages */
+h1 {
+    font-family: var(--title-font);
+    font-size: var(--header-font-size);
+    color: var(--light);
+}
+
+h2, h3, h4, h5 {
+    font-family: var(--title-font);
+    font-size: var(--title-font-size);
+    color: var(--accent);
+    text-shadow: var(--shadow);
+}
+
+.animals {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+}
+
+.animals h2 {
+    color: var(--accent);
+}
+
+.asia-animals {
+    margin-top: 5rem;
+}
+
+.animals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 6%;
+    row-gap: 4%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.animals-grid > .animals-card-sm {
+    grid-column: 1/2;
+    height: 245px;
+    width: var(--animals-card-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animals-grid > .animals-card-sm:nth-child(odd) {
+    grid-row: 1/2;
+    margin-top: 0.3rem;
+}
+
+.animals-grid > .animals-card-sm:nth-child(even) {
+    grid-row: 2/3;
+    margin-top: 1rem;
+}
+
+.animals-grid > .animals-card-l {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    height: 550px;
+    width: var(--animals-card-width);
+}
+
+.animals-card-sm .animals-card-image {
+    height: 200px;
+    width: var(--animals-card-width);
+    object-position: center;
+    object-fit: cover;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    box-shadow: var(--shadow);
+}
+
+.animals-card-text {
+    background: var(--secondary);
+    color: var(--light);
+    font-size: calc(var(--title-font-size) - 0.5rem);
+    border-top: 1px solid var(--light);
+    width: var(--animals-card-width);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+.animals-grid .animals-card-sm:nth-child(odd) > .animals-card-text {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+}
+
+.animals-card-text > p {
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+.animals-card-l .animals-card-image {
+    height: 550px;
+    width: var(--animals-card-width);
+    object-position: center;
+    object-fit: cover;
+    border-radius: 1%;
+    box-shadow: var(--shadow);
+}
+
+.animals-card-l .animals-card-text {
+    position: relative;
+    bottom: 150px;
+    border-bottom: 1px solid var(--light);
+    width: calc(var(--animals-card-width) - 5rem);
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/** Tape effect **/
+
+.img-tape {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: 20px auto 10px;
+}
+
+.img-tape:before, .img-tape:after {
+    background: rgba(255, 255, 235, .6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    content: "";
+    display: block;
+    height: 30px;
+    position: absolute;
+    margin: auto;
+    width: 100px;
+}
+
+.img-tape-position-l:before {
+    left: -25px;
+    top: -5px;
+    transform: rotate(-35deg);
+}
+
+.img-tape-position-l:after {
+    right: -30px;
+    top: -5px;
+    transform: rotate(45deg);
+}
+
+/** Media queries **/
+
+@media screen and (max-width:840px) {
+    .animals-grid {
+        grid-template-columns: repeat(2, var(--animals-card-width));
+        grid-template-rows: repeat(2, 250px);
+        column-gap: 0.3rem;
+        row-gap: 0.3rem;
+    }
+
+    .animals-grid .animals-card-sm:nth-child(odd) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0;
+    }
+
+    .animals-grid .animals-card-sm:nth-child(even) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0;
+    }
+
+    .animals-grid .animals-card-l {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+        background: none;
+    }
+
+    .animals-card-l .animals-card-image {
+        height: 200px;
+        width: var(--big-animals-card-width);
+        object-position: center;
+        object-fit: cover;
+        border-bottom: 1px solid #F5F5F5;
+        border-top-left-radius: 1%;
+        border-top-right-radius: 1%;
+    }
+
+    .animals-card-l .animals-card-text {
+        position: initial;
+        border: none;
+        bottom: 0;
+        width: var(--big-animals-card-width);
+        background: var(--secondary);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 0;
+        box-shadow: var(--shadow);
+    }
+
+    .img-tape {
+        display: none;
+    }
+
+    .img-tape-position-sm:before {
+        display: none;
+    }
+
+    .img-tape-position-sm:after {
+        display: none;
+    }
+
+    .img-tape-position-l:before {
+        display: none;
+    }
+
+    .img-tape-position-l:after {
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .animals-grid {
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 250px);
+        margin: 0;
+    }
+
+    .animals-grid .animals-card-sm:nth-child(odd) {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .animals-grid .animals-card-sm:nth-child(even) {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .animals-grid .animals-card-l {
+        grid-row: 3/4;
+        width: 100%;
+    }
+
+    .animals-card-l .animals-card-image {
+        height: 200px;
+        width: 90%;
+        object-position: center;
+        object-fit: cover;
+        border-bottom: 1px solid #F5F5F5;
+    }
+
+    .animals-card-l .animals-card-text {
+        position: initial;
+        border: none;
+        bottom: 0;
+        width: 90%;
+        background: var(--secondary);
+    }
+
+    .animals-grid > .animals-card-sm {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+        background: none;
+    }
+
+    .animals-card-sm .animals-card-image {
+        width: 90%;
+    }
+
+    .animals-card-sm .animals-card-text {
+        width: 90%;
+    }
+}

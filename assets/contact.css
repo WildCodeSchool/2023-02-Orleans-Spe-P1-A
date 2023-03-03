@@ -1,0 +1,89 @@
+:root {
+    --header-picture: url(images/zebra-header.jpg);
+}
+
+.container {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.alt {
+    background-color: #f8ffe7;
+.container > div {
+    width: 60%;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: var(--spacing4);
+    color: var(--accent);
+    font-family: var(--title-font);
+    -webkit-text-stroke: 1px white;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5)
+}
+
+.container.alt section h4 {
+    text-align: end;
+}
+.container section h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: var(--spacing3) 0;
+}
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: var(--spacing2);
+}
+form {
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: var(--spacing);
+    margin: var(--spacing2) 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+textarea {
+    height: 200px;
+    font-family: var(--text-font);
+}
+textarea::placeholder {
+    font-family: var(--text-font);
+}
+button {
+    background-color: var(--primary);
+    padding: var(--spacing2);
+    font-size: calc(var(--font-size) + 0.1rem);
+    width: 100%;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius:7px;
+    color: var(--light);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline-color: var(--light);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: -7px;
+}
+button:hover {
+    background-color: var(--accent);
+}
+
+@media screen and (max-width: 768px) {
+    .container > div {
+        width: 80%;
+    }
+}

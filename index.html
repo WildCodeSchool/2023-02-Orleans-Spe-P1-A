@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/accueil.css">
-
-
-    <title>Wild Zoo</title>
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/accueil.css">
+        <title>Wild Zoo</title>
 </head>
 
 <body>
-    <nav>
-    </nav>
-    <header>
-        <h1>Bienvenue au Wild Zoo</h1>
+    <header class="navbar-container">
+        <div class="opacity-layer">
+            <div class="navbar">
+                <a class="branding" href="/index.html">wild Zoo</a>
+                <nav>
+                    <a href="the-zoo.html">Le Zoo</a>
+                    <a href="our-animals.html">Nos Animaux</a>
+                    <a href="visit.html">Votre Visite</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
     </header>
+    <div class="header">
+        <div class="hero">
+            <h1>Bienvenue au <span>Wild Zoo</span></h1>
+            <span class="scroll_down">
+                <i class="fas fa-chevron-down"></i>
+            </span>
+        </div>
+        <div class="paint-effect"></div>
+    </div>
 
     <!-------------------------------MAIN-------------------->
 
@@ -31,7 +49,6 @@
                 Le Wild Zoo
             </h2>
         </div>
-
 
         <div class="main_presentation">
             <div class="main_portrait" alt="image d'un animal du zoo">
@@ -109,3 +126,6 @@
         </div>
     </main>
     <!---------------------------->
+</body>
+
+</html>
