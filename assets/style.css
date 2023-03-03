@@ -152,6 +152,10 @@ div.navbar {
 /* */
 /* hero */
 
+.hero > h1 {
+    margin-bottom: 5rem;
+}
+
 .header {
     margin-bottom: 5rem;
 }
