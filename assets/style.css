@@ -31,7 +31,7 @@
 
     --line-height: 1.5;
 
-    --header-picture: url(images/hero.jpg);
+    --header-picture: url(./images/hero.jpg);
 }
 
 * {

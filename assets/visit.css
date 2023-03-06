@@ -1,7 +1,7 @@
-@import url("../assets/style.css");
+@import "style.css";
 
 :root {
-    --header-picture: url(images/lion-cub-header.jpg);
+    --header-picture: url(./images/lion-cub-header.jpg);
 }
 
 .visit > h1 {
@@ -69,7 +69,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    background-image: url(images/meerkat_ticket.jpg);
+    background-image: url(./images/meerkat_ticket.jpg);
     background-size: cover;
     border-radius: 1%;
     width: 25em;
@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    background-image: url(images/Lion_ticket.jpg);
+    background-image: url(./images/Lion_ticket.jpg);
     background-size: cover;
     border-radius: 1%;
     width: 25em;
@@ -97,7 +97,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    background-image: url(images/Monkey_ticket.jpg);
+    background-image: url(./images/Monkey_ticket.jpg);
     background-size: cover;
     border-radius: 1%;
     width: 25em;

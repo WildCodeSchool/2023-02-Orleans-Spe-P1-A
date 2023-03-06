@@ -1,7 +1,7 @@
 @import "style.css";
 
 :root {
-    --header-picture: url(images/tiger-header.jpg);
+    --header-picture: url(./images/tiger-header.jpg);
     --animals-card-width : clamp(17rem, 45vw, 28rem);
     --big-animals-card-width : clamp(34.3rem, 90vw, 56.3rem);
 }
