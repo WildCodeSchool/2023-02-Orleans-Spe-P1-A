@@ -1,6 +1,11 @@
 :root {
-    --header-picture: url(/assets/images/hero-wild.jpg);
+    --header-picture: url(images/hero-wild.jpg);
 }
+
+.hero h1 {
+    text-align: initial;
+}
+
 /* containers */
 .container {
     width: 100%;
