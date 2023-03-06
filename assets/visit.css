@@ -1,7 +1,6 @@
 @import url("../assets/style.css");
 
 :root {
-    --accent: #eb852641;
     --header-picture: url(images/lion-cub-header.jpg);
 }
 
@@ -111,7 +110,7 @@
 .ticket-bottom {
     display: flex;
     flex-direction: column;
-    background-color: var(--accent);
+    background-color: var(--shadow-secondary-color);
     justify-content: space-between;
     align-items: center;
     height: 45%;
