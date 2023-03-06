@@ -51,7 +51,6 @@ async function cookiesProcess()
     acceptButton.addEventListener("click", acceptCookies)
     
 }
-console.log(isAlreadyAsked())
 
 if (!isAlreadyAsked()) {
     await cookiesProcess();
