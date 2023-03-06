@@ -2,10 +2,10 @@
 
 function openMenu() {
     // je récupère les classes dont j'ai besoin
-    let navbar = document.querySelector('.navbar');
-    let burger = document.querySelector('.hamburger_bloc');
+    const navbar = document.querySelector('.navbar');
+    const burger = document.querySelector('.hamburger_bloc');
     //J'initialise une variable bouléene en false
-    let menuOpen = false;
+    const menuOpen = false;
 
     burger.addEventListener('click', () => {
         navbar.classList.toggle('open_nav');
