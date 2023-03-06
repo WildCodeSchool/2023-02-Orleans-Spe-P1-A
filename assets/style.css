@@ -13,6 +13,7 @@
     --accent-rgb: rgb(235, 133, 38);
     --accent: #eb8526;
     --shadow-color: rgba(48, 57, 4, 0.3);
+    --shadow-secondary-color: #eb852641;
     --text-font: 'Karla', sans-serif;
     --title-font: 'Press Start 2P', sans-serif;
     --font-size: 1.1rem;

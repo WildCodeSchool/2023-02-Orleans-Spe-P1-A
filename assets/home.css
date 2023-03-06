@@ -121,7 +121,7 @@
 
 .little_girafe2 {
     display: flex;
-    padding-left: 60px;
+    padding-left: 75px;
     height: 80px;
     background-color: var(--light);
 }
