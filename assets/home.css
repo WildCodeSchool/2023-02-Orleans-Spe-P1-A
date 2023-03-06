@@ -24,7 +24,7 @@
 }
 
 .main_portrait {
-    background-image: url("/assets/images/giraffe3-min.jpg");
+    background-image: url("/assets/images/giraffe3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -238,6 +238,5 @@
     .main_grass_bottom {
         transform: translateX(-25px);
         margin-bottom: -25px;
-
     }
 }

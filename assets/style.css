@@ -320,24 +320,72 @@ div.navbar {
 /* media queries navbar*/
 
 @media screen and (max-width: 768px) {
-    div.navbar {
-        flex-direction: column;
-        padding: var(--spacing);
-    }
+    
 
     span.branding {
         font-size: 1.2rem;
-    }
-
-    .navbar nav {
-        flex-direction: column;
-        align-items: center;
     }
 
     .navbar nav a {
         font-size: 1rem;
         padding: var(--spacing);
     }
+}
+
+/*---MENU BURGER---*/
+.hamburger_bloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: none;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.hamburger_lines  {
+    width: 50px;
+    height: 6px;
+    background: black;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    transform: translateY(40px);
+    margin: auto;
+}
+
+.hamburger_lines::before,
+.hamburger_lines::after {
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: black;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.hamburger_lines::before {
+    transform: translateY(-16px);
+}
+
+.hamburger_lines::after {
+    transform: translateY(16px);
+}
+
+/*--- ANIMATION DES BARRES ---*/
+
+.hamburger_bloc.open .hamburger_lines {
+    background: transparent;  
+}
+
+.hamburger_bloc.open .hamburger_lines::before{
+    transform: rotate(45deg) ;
+}
+
+.hamburger_bloc.open .hamburger_lines::after {
+    transform: rotate(-45deg) ;
 }
 
 /* */
@@ -408,6 +456,65 @@ div.hero h2 span {
         min-width: 0;
         font-size: 1.5rem;
         padding: var(--spacing);
+    }
+}
+
+@media all and (max-width:700px) {
+
+    nav {
+        display: none;
+    }
+
+    div.navbar {
+        height: 100vh;
+        font-size: 1.3em;   
+    }
+
+    div.navbar a {
+        width: 100%;
+        font-size: 1.3em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid var(--light);
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        background-color: var(--primary-rgb);
+        transform: translateX(-135%);
+        transition: 0.4s transform ease-in-out;
+        position: absolute;
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .open_nav {
+        transform: initial;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around ;
+        align-items: center;
+        margin-left: 0px; 
+        background-color: rgba(57, 124, 40,.5)
+    }
+
+    .navbar .open_nav {
+        transform: translateY(100%);
+    }
+
+    .hamburger_bloc{
+        display: block;
+        position: absolute;
+        right:5px;
+        top:0px;
     }
 }
 
