@@ -5,7 +5,7 @@ function openMenu() {
     const navbar = document.querySelector('.navbar');
     const burger = document.querySelector('.hamburger_bloc');
     //J'initialise une variable bouléene en false
-    const menuOpen = false;
+    let menuOpen = false;
 
     burger.addEventListener('click', () => {
         navbar.classList.toggle('open_nav');
