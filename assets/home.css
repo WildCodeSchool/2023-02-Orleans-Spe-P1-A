@@ -24,7 +24,7 @@
 }
 
 .main_portrait {
-    background-image: url("/assets/images/giraffe-min.jpg");
+    background-image: url("./images/giraffe-min.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
