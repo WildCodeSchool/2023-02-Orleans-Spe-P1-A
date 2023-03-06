@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./assets/contact.css">
+    <title>Nous Contacter</title>
+</head>
+<body>
+<header class="navbar-container">
+    <div class="opacity-layer">
+        <div class="navbar">
+            <a class="branding" href="./index.html">wild Zoo</a>
+            <nav>
+                <a href="presentation.html">Le Zoo</a>
+                <a href="our-animals.html">Nos Animaux</a>
+                <a href="visit.html">Votre Visite</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="hamburger_bloc">
+            <div class="hamburger_lines">
+
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header">
+    <div class="hero">
+        <h1>
+            Contact
+        </h1>
+    </div>
+    <div class="paint-effect"></div>
+</div>
+<main>
+    <div class="container">
+        <div>
+            <section>
+                <h2 class="page-title">Contactez nous</h2>
+                <p>Si vous avez des questions sur notre zoo, notre équipe se fera un plaisir de vous aider. Vous pouvez
+                    nous contacter par téléphone, par courriel ou en remplissant le formulaire de contact sur notre site
+                    web. Nous ferons de notre mieux pour répondre à toutes vos questions dans les plus brefs
+                    délais. </p>
+            </section>
+        </div>
+        <div>
+            <section>
+                <form action="/contact.html" method="post">
+                    <label for="nom">Nom :</label>
+                    <input type="text" placeholder="Votre nom" id="nom" name="nom" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" placeholder="Votre adresse email" name="email" required>
+
+                    <label for="sujet">Sujet :</label>
+                    <input type="text" id="sujet" name="sujet" placeholder="Le sujet de votre message" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </section>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer1">
+        <div class="footer_first_column column">
+                <span class="branding_footer">
+                    Wild zoo
+                </span>
+        </div>
+        <div class="footer_second_column footer_column">
+            <ul>
+                <li>Contact</li>
+                <li><a href="#">Tel: 555-4823</a></li>
+                <li><a href="#">Mail: wildzoo@wcs.fr</a></li>
+            </ul>
+        </div>
+        <div class="footer_real_third_column footer_column">
+            <ul>
+                <li>Explorer</li>
+                <li><a href="#">Plan</a></li>
+                <li><a href="#">Actualités</a></li>
+
+            </ul>
+        </div>
+        <div class="footer_third_column footer_column">
+                <span class="footer_follow">
+                    Suivez-nous
+                </span>
+
+            <div class="footer_social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-snapchat"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <span class="footer_branding footer_copyright">&copy 2023 Wild Zoo</span>
+        <div class="footer_mentions">
+            <li><a href>Mentions légales</a></li>
+        </div>
+    </div>
+</footer>
+<script src="./assets/js/burger.js"></script>
+</body>
+</html>
