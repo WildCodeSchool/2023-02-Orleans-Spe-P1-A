@@ -13,7 +13,6 @@
     --accent-rgb: rgb(235, 133, 38);
     --accent: #eb8526;
     --shadow-color: rgba(48, 57, 4, 0.3);
-    --shadow-secondary-color: #eb852641;
     --text-font: 'Karla', sans-serif;
     --title-font: 'Press Start 2P', sans-serif;
     --font-size: 1.1rem;
@@ -348,7 +347,7 @@ div.navbar {
 .hamburger_lines  {
     width: 50px;
     height: 6px;
-    background: black;
+    background: var(--light);
     border-radius: 5px;
     transition: all .5s ease-in-out;
     transform: translateY(40px);
@@ -361,7 +360,7 @@ div.navbar {
     position: absolute;
     width: 50px;
     height: 6px;
-    background: black;
+    background: var(--accent);
     border-radius: 5px;
     transition: all .5s ease-in-out;
 }
