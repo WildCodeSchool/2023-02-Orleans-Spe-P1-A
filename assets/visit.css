@@ -1,4 +1,4 @@
-@import url("../assets/style.css");
+@import "style.css";
 
 :root {
     --header-picture: url(images/lion-cub-header.jpg);
